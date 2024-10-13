@@ -41,25 +41,3 @@ function calculateTotalTarget(startDate, endDate, totalAnnualTarget) {
 
 // Example usage
 console.log(calculateTotalTarget('2024-01-01', '2024-03-31', 5220));
-function runPerformanceTest(iterations = 1000) {
-    const startDate = '2024-01-01';
-    const endDate = '2024-12-31';
-    const totalAnnualTarget = 5220;
-
-    const start = performance.now();
-
-    for (let i = 0; i < iterations; i++) {
-        calculateTotalTarget(startDate, endDate, totalAnnualTarget);
-    }
-
-    const end = performance.now();
-    const totalTime = end - start;
-    const averageTime = totalTime / iterations;
-
-    console.log(`Performance Test Results:`);
-    console.log(`Total time for ${iterations} iterations: ${totalTime.toFixed(2)} ms`);
-    console.log(`Average time per call: ${averageTime.toFixed(4)} ms`);
-}
-
-// Run the performance test
-runPerformanceTest();
