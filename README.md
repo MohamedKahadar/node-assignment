@@ -1,6 +1,3 @@
-Sure! Here’s the complete README.md file in one block for easy copying:
-
-markdown
 # Target Calculation Project
 
 ## Description
